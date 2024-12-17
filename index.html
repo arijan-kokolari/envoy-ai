@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./src/assets/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blockchain Master AI</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    let startX = 0;
+
+    window.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    window.addEventListener('touchmove', (e) => {
+      const currentX = e.touches[0].clientX;
+      let leftpane = document.getElementById('leftpane');
+      if (startX - currentX > 50) {
+        // Swipe left
+        // leftpane.translate(-100, 0);
+        leftpane.classList.add('hidden-leftpane');
+      } else if (currentX - startX > 50) {
+        // Swipe right
+        leftpane.classList.remove('hidden-leftpane');
+      }
+    });
+  });
+</script>
+
+</html>
