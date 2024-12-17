@@ -18,10 +18,10 @@ import { AiDataContext } from "../App";
 const ChatGPT = () => {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm Envoy! Ask me anything!",
+      message: "Hello, I'm Ellen! Ask me anything!",
       sentTime: "just now",
       direction: "incoming",
-      sender: "Envoy",
+      sender: "Ellen",
     },
   ]);
   const [isTyping, setIsTyping] = useState(false);
@@ -65,7 +65,7 @@ const ChatGPT = () => {
         const chatGPTResponse = {
           message: content,
           direction: "incoming",
-          sender: "Envoy",
+          sender: "Ellen",
         };
         setMessages((prevMessages) => [...prevMessages, chatGPTResponse]);
       }
@@ -110,7 +110,7 @@ const ChatGPT = () => {
             autoScrollToBottom={true}
             scrollBehavior="smooth"
             typingIndicator={
-              isTyping ? <TypingIndicator content="Envoy is typing" /> : null
+              isTyping ? <TypingIndicator content="Ellen is typing" /> : null
             }
           >
             {messages.map((message, i) => {

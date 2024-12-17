@@ -36,7 +36,7 @@ function App() {
           </AccessContext.Provider>
           <AiDataContext.Provider value={{ balance: tokenBalance, price: 3.2 }}>
             <Routes>
-              <Route path="/" element={<Assistant />} />
+              <Route path="/" element={<AssistantGPT />} />
               <Route path="/assistant" element={<Assistant />} />
               <Route path="/assistant2" element={<AssistantGPT />} />
               <Route path="/auditor" element={<Auditor />} />

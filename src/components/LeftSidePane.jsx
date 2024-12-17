@@ -35,7 +35,7 @@ const navs = [
     src: '/',
   },
   {
-    name: "> AI ASSISTANT(GPT)",
+    name: "> AI ASSISTANT(Ellen)",
     src: '/assistant2',
   },
   {
@@ -212,12 +212,12 @@ const LeftSidePane = () => {
           <div className="flex flex-row items-center gap-2 hover:brightness-90 hover:cursor-pointer">
             <img alt="logo" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
               src={whiteLogo} className="color: transparent;"></img>
-            <h3 className="flex flex-row text-primary font-bold font-spline text-3xl">BLOCK <p className='text-secondary'>AI</p></h3>
+            <h3 className="flex flex-row text-primary font-bold font-spline text-3xl">ELLEN <p className='text-secondary'>AI</p></h3>
           </div>
           <h5 className='text-primary-700 text-center'>TERMINAL V-1.0</h5>
         </a>
 
-        <div className="w-full h-full flex flex-col items-start gap-8">
+        {/* <div className="w-full h-full flex flex-col items-start gap-8">
           <div className='w-full flex flex-col gap-4'>
             <div className='text-primary-700 text-xs'>ACCOUNT</div>
             <div className='flex flex-col gap-2'>
@@ -282,7 +282,7 @@ const LeftSidePane = () => {
                 </div>
               </div>
             </>
-        </div>
+        </div> */}
 
       </div>
     </div>
