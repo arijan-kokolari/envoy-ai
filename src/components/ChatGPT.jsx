@@ -52,7 +52,7 @@ const ChatGPT = () => {
       // const response = await processMessageToChatGPT([...messages, newMessage]);
       // const response = await axios.get(`${BACKEND_URL}/aichat?ask=${message}&accessToken=${accessToken}`);
       const response = await axios.post(
-        `https://football-tipster-x-bot.onrender.com/chat`,
+        `https://xagent.ellenvtuber.com/chat`,
         {
           query: message,
         }
